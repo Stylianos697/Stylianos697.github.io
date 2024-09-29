@@ -11,6 +11,8 @@ body {
     align-items: center;
     text-align: center;
     width: 100%;
+    opacity: 0;
+    transition: opacity 2s ease-in; 
 }
 
 #header {
@@ -221,4 +223,19 @@ button {
 
 button:hover {
     background-color: #cc7a00;
+}
+
+section.dark-theme {
+    background-color: #121212;
+    color: white;
+}
+
+section.light-theme {
+    background-color: white;
+    color: #121212;
+}
+
+#themeToggleBtn {
+    width: fit-content;
+    border: 3px solid black;
 }
