@@ -14,6 +14,16 @@
         </div>
     </header>
 
+    <section id="current-time">
+        <div class="wrapper">
+            <div class="display">
+                <div id="time"></div>
+            </div>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+
     <section id="about">
         <div class="about-container">
             <img src="me.jpg" alt="About Me Image">
@@ -63,6 +73,10 @@
             <button id="showPhone">Show Phone Number</button>
         </form>
     </section>
+
+    <script>
+        
+    </script>
     
         <button id="themeToggleBtn">Switch to Dark Theme</button>
 
@@ -84,6 +98,24 @@
                 } else {
                     themeToggleBtn.textContent = 'Switch to Dark Theme';
                 }
+            });
+
+            setInterval(()=> {
+            const time = document.querySelector("#time");
+            let date = new Date();
+            let hours = date.getHours();
+            let minutes = date.getMinutes();
+            let seconds = date.getSeconds();
+            if(hours < 10) {
+                hours = "0" + hours;
+            }
+            if(minutes < 10) {
+                minutes = "0" + minutes;
+            }
+            if(seconds < 10) {
+                seconds = "0" + seconds;
+            }
+            time.textContent = hours + ":" + minutes + ":" + seconds;
             });
         </script>  
 
