@@ -1,3 +1,25 @@
+html::-webkit-scrollbar {
+    width: 1.5vw;
+    height: 1.5vw;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: rgba(84, 9, 3, 0.4);
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(84, 9, 3);
+}
+
+html::-webkit-scrollbar-track {
+    background-color: rgb(255, 255, 90, 0.4);
+}
+
+html::-webkit-scrollbar-track:hover {
+    background-color: rgb(255, 255, 90);
+}
+
+
 
 body {
     font-family: Arial, sans-serif;
